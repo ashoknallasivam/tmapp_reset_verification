@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= title %></title>
+  <style>
+    @font-face {
+    font-family: 'Bebas Neue';
+    src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+    body {
+      margin: 0;
+      font-family: 'Bebas Neue', sans-serif;
+      background-color: #0a1f3d; /* Dark blue */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .logo img {
+      width: 200px;
+      margin-right: 1rem;
+    }
+
+    .logo h1 {
+      font-size: 2.5rem;
+      color: white;
+      text-shadow: 1px 1px #1e90ff;
+      margin: 0;
+    }
+
+.message-box {
+      background-color: #00386b ;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .message-box h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .message-box p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: #389382; /* Thrive green */
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #389382;
+      opacity: 0.3;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="/assets/images/thrive.png" alt="THRIVE Logo" />
+  </div>
+
+  <div class="message-box">
+        <h1><%=title%> </h1>
+        <p><%=message%></p>
+
+      <button class="btn" onclick="window.close()">CLOSE WINDOW</button>
+
+  </div>
+</body>
+</html>
