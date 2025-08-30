@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import {updateNewPassword,updateVerification} from "./controllers/auth_controllers.js"
+import {updateNewPassword,updateVerification} from "../controllers/auth_controllers.js"
 
 const app = express()
 app.use(cors())
